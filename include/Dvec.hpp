@@ -70,7 +70,7 @@ namespace Vec {
         }
 
         bool operator!=(const Vec3d &r) const noexcept {
-            return (r.x != x) && (r.y != y) && (r.z != z);
+            return (r.x != x) || (r.y != y) || (r.z != z);
         }
 
         bool operator==(const Vec3d &r) const noexcept {
