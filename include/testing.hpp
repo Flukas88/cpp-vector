@@ -4,7 +4,7 @@
 namespace Vec
 {
     template<typename T>
-    bool testVector(T &expected, T &actual)
+    bool testVector(const T &expected, const T &actual)
     {
         return !(expected != actual);
     }
