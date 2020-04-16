@@ -11,7 +11,7 @@ namespace Vec {
     class Vec3d {
 
     public:
-        Vec3d(T x, T y, T z) : x(x), y(y), z(z) {}
+        __unused Vec3d(T x, T y, T z) : x(x), y(y), z(z) {}
 
         Vec3d() : x(0), y(0), z(0) {}
 

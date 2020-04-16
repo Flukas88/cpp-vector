@@ -3,8 +3,8 @@
 
 namespace Vec
 {
-
-    bool testVector(DVec3d &expected, DVec3d &actual)
+    template<typename T>
+    bool testVector(T &expected, T &actual)
     {
         return !(expected != actual);
     }
