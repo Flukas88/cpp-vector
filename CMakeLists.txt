@@ -8,7 +8,6 @@ include_directories(include)
 
 add_executable(vector_cpp
         include/Dvec.hpp
-        include/testing.hpp
         include/catch.hpp
         main.cpp)
 
