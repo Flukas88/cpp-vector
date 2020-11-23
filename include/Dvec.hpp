@@ -78,6 +78,20 @@ namespace Vec
             return res;
         }
 
+        friend Vec3d operator/(const Vec3d &v, const double &r)
+        {
+            if (r == 0)
+            {
+                return Vec3d{0, 0, 0};
+            }
+
+            Vec3d res;
+            res.x = v.x / r;
+            res.y = v.y / r;
+            res.z = v.z / r;
+            return res;
+        }
+
         Vec3d operator*(const Vec3d &r) const
         {
             Vec3d res;
